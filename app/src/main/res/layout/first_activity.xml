@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/first_activity_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to my page!"
+        android:textSize="30sp"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/first_activity_text2"
+        android:layout_width="363dp"
+        android:layout_height="497dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="This page is a test page of Android Studio. We learn basics Android Studio and basics of Kotlin, which is the official language of Android Studio. To learn more on basics of Android Studio, go to the page by clicking Android Studio Basics button. And, to learn more on the basics of Kotlin, go to the page by clicking on Kotlin Basics button."
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/first_activity_button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_activity_text1" />
+
+    <Button
+        android:id="@+id/first_activity_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/android_studio_basics"
+        android:background="@color/yellow"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_activity_text2" />
+    <Button
+        android:id="@+id/first_activity_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/purple_200"
+        android:text="@string/kotlin_basics"
+        app:layout_constraintStart_toStartOf="@id/first_activity_button1"
+        app:layout_constraintEnd_toEndOf="@id/first_activity_button1"
+        app:layout_constraintTop_toBottomOf="@id/first_activity_button1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
