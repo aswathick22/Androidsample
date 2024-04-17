@@ -19,12 +19,13 @@
 
     <TextView
         android:id="@+id/first_activity_text2"
-        android:layout_width="363dp"
-        android:layout_height="497dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:paddingBottom="20dp"
         android:text="This page is a test page of Android Studio. We learn basics Android Studio and basics of Kotlin, which is the official language of Android Studio. To learn more on basics of Android Studio, go to the page by clicking Android Studio Basics button. And, to learn more on the basics of Kotlin, go to the page by clicking on Kotlin Basics button."
         android:textColor="@color/purple_500"
         android:textSize="18sp"
@@ -55,5 +56,17 @@
         app:layout_constraintStart_toStartOf="@id/first_activity_button1"
         app:layout_constraintEnd_toEndOf="@id/first_activity_button1"
         app:layout_constraintTop_toBottomOf="@id/first_activity_button1" />
+
+    <Button
+        android:id="@+id/bn_recycler_page_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycler View"
+        android:background="@color/yellow"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_activity_button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

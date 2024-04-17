@@ -1,4 +1,4 @@
-package com.example.testapp_2
+package com.example.sample
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button

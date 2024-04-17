@@ -1,4 +1,4 @@
-package com.example.testapp_2
+package com.example.sample
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class SecondActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.second_activity)
