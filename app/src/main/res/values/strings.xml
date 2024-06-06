@@ -3,4 +3,6 @@
     <string name="this_page_is_a_test_page_of_android_studio_we_learn_basics_android_studio_and_basics_of_kotlin_which_is_the_official_language_of_android_studio_to_learn_more_on_basics_of_android_studio_go_to_the_page_by_clicking_android_studio_basics_button_and_to_learn_more_on_the_basics_of_kotlin_go_to_the_page_by_clicking_on_kotlin_basics_button">This page is a test page of Android Studio. We learn basics Android Studio and basics of Kotlin, which is the official language of Android Studio. To learn more on basics of Android Studio, go to the page by clicking Android Studio Basics button. And, to learn more on the basics of Kotlin, go to the page by clicking on Kotlin Basics button.</string>
     <string name="android_studio_basics">Android Studio Basics</string>
     <string name="kotlin_basics">Kotlin Basics</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

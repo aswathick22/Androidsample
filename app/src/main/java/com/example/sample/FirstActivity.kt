@@ -5,6 +5,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
+import androidx.navigation.ui.setupActionBarWithNavController
 
 
 class FirstActivity : AppCompatActivity() {
@@ -30,4 +34,5 @@ class FirstActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }
