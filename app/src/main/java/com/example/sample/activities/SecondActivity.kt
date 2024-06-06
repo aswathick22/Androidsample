@@ -1,10 +1,10 @@
-package com.example.sample
-import android.annotation.SuppressLint
+package com.example.sample.activities
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sample.R
 
 class SecondActivity : AppCompatActivity() {
 

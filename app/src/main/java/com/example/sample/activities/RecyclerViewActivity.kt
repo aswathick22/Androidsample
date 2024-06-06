@@ -1,19 +1,20 @@
-package com.example.sample
+package com.example.sample.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sample.R
 import com.example.sample.adapter.CustomAdapter
 import com.example.sample.data.ItemData
 
 class RecyclerViewActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.recyclerview_layout)
+        setContentView(R.layout.fragment_recyclerview)
 
         // getting the recyclerview by its id
-        val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
+        val recyclerview = findViewById<RecyclerView>(R.id.recycler_view)
 
         // this creates a vertical layout Manager
         recyclerview.layoutManager = LinearLayoutManager(this)

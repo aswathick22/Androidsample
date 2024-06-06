@@ -15,9 +15,7 @@ class CustomAdapter(private val mList: List<ItemData>) : RecyclerView.Adapter<Cu
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // inflates the card_view_design view
         // that is used to hold list item
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.card_view_design, parent, false)
-
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_list, parent, false)
         return ViewHolder(view)
     }
 
