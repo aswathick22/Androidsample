@@ -9,7 +9,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.sample.R
 import com.example.sample.databinding.FragmentSignupBinding
-import com.example.sample.fragments.login.LoginViewModel
 
 class SignupFragment : Fragment() {
 

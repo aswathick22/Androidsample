@@ -9,7 +9,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.sample.R
 import com.example.sample.databinding.FragmentWelcomeBinding
-import com.example.sample.fragments.welcome.WelcomeViewModel
 
 class WelcomeFragment : Fragment() {
 
@@ -19,7 +18,7 @@ class WelcomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         //findNavController().navigateUp()
         binding = FragmentWelcomeBinding.inflate(inflater, container, false)
