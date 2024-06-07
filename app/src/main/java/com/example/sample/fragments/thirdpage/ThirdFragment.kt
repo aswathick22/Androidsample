@@ -22,7 +22,7 @@ class ThirdFragment : Fragment() {
         // Inflate the layout for this fragment
         //findNavController().navigateUp()
         binding = FragmentThirdBinding.inflate(inflater, container, false)
-        ThirdFragmentViewModel.nameValue5.observe(viewLifecycleOwner){
+        thirdFragmentViewModel.nameValue5.observe(viewLifecycleOwner){
             print(it)
         }
         binding.thirdButton.setOnClickListener {

@@ -22,7 +22,7 @@ class SecondFragment : Fragment() {
         // Inflate the layout for this fragment
         //findNavController().navigateUp()
         binding = FragmentSecondBinding.inflate(inflater, container, false)
-        SecondFragmentViewModel.nameValue4.observe(viewLifecycleOwner){
+        secondFragmentViewModel.nameValue4.observe(viewLifecycleOwner){
             println(it)
         }
         binding.secondButton.setOnClickListener {

@@ -24,7 +24,6 @@ class SignupFragment : Fragment() {
         signupViewModel.nameValue1.observe(viewLifecycleOwner){
             print(it)
         }
-
         binding.bnSubmit.setOnClickListener {
             findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
         }

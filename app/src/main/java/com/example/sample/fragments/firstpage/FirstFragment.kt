@@ -18,11 +18,11 @@ class FirstFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         //findNavController().navigateUp()
         binding = FragmentFirstBinding.inflate(inflater, container, false)
-        FirstFragmentViewModel.nameValue3.observe(viewLifecycleOwner){
+        firstFragmentViewModel.nameValue3.observe(viewLifecycleOwner){
             print(it)
         }
         binding.firstButton1.setOnClickListener {
@@ -32,7 +32,7 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_firstFragment_to_thirdFragment)
         }
         binding.bnRecyclerview.setOnClickListener {
-            findNavController().navigate(R.id.action_firstFragment_to_recyclerviewPage)
+            findNavController().navigate(R.id.action_firstFragment_to_recyclerViewFragment2)
         }
         return binding.root
     }

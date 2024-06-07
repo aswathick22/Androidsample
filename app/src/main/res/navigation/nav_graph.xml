@@ -45,6 +45,9 @@
         <action
             android:id="@+id/action_firstFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_recyclerViewFragment2"
+            app:destination="@id/recyclerViewFragment2" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -62,4 +65,8 @@
             android:id="@+id/action_thirdFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/recyclerViewFragment2"
+        android:name="com.example.sample.fragments.RecyclerViewFragment"
+        android:label="RecyclerViewFragment" />
 </navigation>

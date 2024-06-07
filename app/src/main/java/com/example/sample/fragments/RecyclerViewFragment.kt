@@ -1,17 +1,20 @@
 package com.example.sample.fragments
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.findFragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.sample.R
 import com.example.sample.adapter.CustomAdapter
 import com.example.sample.data.ItemData
+import com.example.sample.databinding.FragmentRecyclerviewBinding
+
 
 class RecyclerViewFragment : Fragment() {
 
+    private lateinit var binding : FragmentRecyclerviewBinding
     private lateinit var adapter: CustomAdapter
     private lateinit var recyclerViewFragment: RecyclerViewFragment
     private lateinit var newsArrayList: ArrayList<ItemData>
@@ -19,13 +22,21 @@ class RecyclerViewFragment : Fragment() {
     private lateinit var heading : Array<String>
     private lateinit var news : Array<String>
 
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentRecyclerviewBinding.inflate(inflater, container, false)
+        return super.onCreateView(inflater, container, savedInstanceState)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         dataInitialize()
         val layoutManager = LinearLayoutManager(context)
-        recyclerViewFragment = View.findViewById(R.id.recycler_view)
-        recyclerViewFragment.layoutManager = layoutManager
-        recyclerViewFragment.setHasFixedSize(true)
+        binding.recyclerView.layoutManager = layoutManager
+        binding.recyclerView.setHasFixedSize(true)
         adapter = CustomAdapter(newsArrayList)
         recyclerViewFragment.adapter = adapter
 

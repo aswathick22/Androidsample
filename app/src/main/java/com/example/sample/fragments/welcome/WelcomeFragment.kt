@@ -23,7 +23,7 @@ class WelcomeFragment : Fragment() {
         // Inflate the layout for this fragment
         //findNavController().navigateUp()
         binding = FragmentWelcomeBinding.inflate(inflater, container, false)
-        WelcomeViewModel.nameValue.observe(viewLifecycleOwner){
+        welcomeViewModel.nameValue.observe(viewLifecycleOwner){
             print(it)
         }
         binding.bnLogin.setOnClickListener {
