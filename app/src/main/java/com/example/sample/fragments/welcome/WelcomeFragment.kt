@@ -20,7 +20,7 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        //findNavController().navigateUp()
+        //findNavController().navigateUp() - to navigate to the previously viewed page
         binding = FragmentWelcomeBinding.inflate(inflater, container, false)
         welcomeViewModel.nameValue.observe(viewLifecycleOwner){
             print(it)

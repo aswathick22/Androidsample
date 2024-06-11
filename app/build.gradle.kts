@@ -28,6 +28,7 @@ android {
         }
     }
     buildFeatures{
+        //noinspection DataBindingWithoutKapt
         dataBinding = true
     }
     compileOptions {
@@ -47,6 +48,11 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.moshi)
+    implementation(libs.moshi)
+    implementation(libs.moshi.kotlin)
+    implementation(libs.okhttp.logging.interceptor)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
