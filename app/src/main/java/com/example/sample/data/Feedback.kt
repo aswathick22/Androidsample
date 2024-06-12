@@ -1,4 +1,4 @@
-package com.example.sample.retrofit
+package com.example.sample.data
 
 data class Feedback(
     val feedbackType : String,

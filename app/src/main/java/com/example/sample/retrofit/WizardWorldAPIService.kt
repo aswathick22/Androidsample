@@ -1,12 +1,14 @@
 package com.example.sample.retrofit
 
+import com.example.sample.data.Feedback
+import com.example.sample.data.House
+import com.example.sample.data.Wizard
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.POST
 import retrofit2.http.Query
-
 
 interface WizardWorldAPIService {
     @GET("/Houses")
@@ -22,9 +24,9 @@ interface WizardWorldAPIService {
     @POST("/Feedback")
     suspend fun submitFeedback(@Body feedback : Feedback): Response<Void>
 }
-class WizardWorldApiServiceImpl() : WizardWorldAPIService{
+/*class WizardWorldApiServiceImpl(private val wizardWorldAPIService : WizardWorldAPIService) : WizardWorldAPIService{
     override suspend fun getHouses(): List<House> {
-        TODO("Not yet implemented")
+       return wizardWorldAPIService.getHouses()
     }
 
     override suspend fun getWizards(firstName: String?, lastName: String?): List<Wizard> {
@@ -35,4 +37,4 @@ class WizardWorldApiServiceImpl() : WizardWorldAPIService{
         TODO("Not yet implemented")
     }
 
-}
+}*/

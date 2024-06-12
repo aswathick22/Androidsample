@@ -48,6 +48,9 @@
         <action
             android:id="@+id/action_firstFragment_to_recyclerViewFragment2"
             app:destination="@id/recyclerViewFragment2" />
+        <action
+            android:id="@+id/action_firstFragment_to_retrofitRecyclerViewFragment"
+            app:destination="@id/retrofitRecyclerViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -69,4 +72,8 @@
         android:id="@+id/recyclerViewFragment2"
         android:name="com.example.sample.fragments.RecyclerViewFragment"
         android:label="RecyclerViewFragment" />
+    <fragment
+        android:id="@+id/retrofitRecyclerViewFragment"
+        android:name="com.example.sample.retrofit.RetrofitRecyclerViewFragment"
+        android:label="RetrofitRecyclerViewFragment" />
 </navigation>

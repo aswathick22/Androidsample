@@ -22,13 +22,13 @@ class CustomAdapter(private val mList: List<ItemData>) : RecyclerView.Adapter<Cu
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val ItemsViewModel = mList[position]
+        val itemsViewModel = mList[position]
 
         // sets the image to the imageview from our itemHolder class
-        holder.imageView.setImageResource(ItemsViewModel.image)
+        holder.imageView.setImageResource(itemsViewModel.image)
 
         // sets the text to the textview from our itemHolder class
-        holder.textView.text = ItemsViewModel.text
+        holder.textView.text = itemsViewModel.text
 
     }
 

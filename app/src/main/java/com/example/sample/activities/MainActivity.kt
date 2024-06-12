@@ -9,6 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.sample.R
 import com.example.sample.retrofit.MyViewModel
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
@@ -21,16 +22,17 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         setupActionBarWithNavController(navController)
 
-        mainViewModel.harryPotterData.observe(this){listOfWizard ->
-            listOfWizard.forEach{
-                println("Name of the wizard is ${it.firstName}")
-            }
-        }
-        mainViewModel.houseData.observe(this){listOfHouses ->
-            listOfHouses.forEach{
-                println("Name of the house is ${it.name}")
-            }
-        }
+        //        mainViewModel.harryPotterData.observe(viewLifecycleOwner){listOfWizard ->
+//            listOfWizard.forEach{
+//                println("Name of the wizard is ${it.firstName}")
+//            }
+//        }
+//        mainViewModel.houseData.observe(viewLifecycleOwner){listOfHouses ->
+//            listOfHouses.forEach{
+//                println("Name of the house is ${it.name}")
+//            }
+//        }
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

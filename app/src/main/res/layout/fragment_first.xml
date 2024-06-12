@@ -75,5 +75,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/first_button2" />
+
+        <Button
+            android:id="@+id/bn_retrofit_recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retrofit Recycler View"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bn_recyclerview" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -34,6 +34,9 @@ class FirstFragment : Fragment() {
         binding.bnRecyclerview.setOnClickListener {
             findNavController().navigate(R.id.action_firstFragment_to_recyclerViewFragment2)
         }
+        binding.bnRetrofitRecyclerview.setOnClickListener {
+            findNavController().navigate(R.id.action_firstFragment_to_retrofitRecyclerViewFragment)
+        }
         return binding.root
     }
 
