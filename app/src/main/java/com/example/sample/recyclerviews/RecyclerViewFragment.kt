@@ -1,4 +1,4 @@
-package com.example.sample.fragments
+package com.example.sample.recyclerviews
 
 import android.os.Bundle
 import android.view.LayoutInflater

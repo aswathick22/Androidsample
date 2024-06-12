@@ -70,10 +70,10 @@
     </fragment>
     <fragment
         android:id="@+id/recyclerViewFragment2"
-        android:name="com.example.sample.fragments.RecyclerViewFragment"
+        android:name="com.example.sample.recyclerviews.RecyclerViewFragment"
         android:label="RecyclerViewFragment" />
     <fragment
         android:id="@+id/retrofitRecyclerViewFragment"
-        android:name="com.example.sample.retrofit.RetrofitRecyclerViewFragment"
+        android:name="com.example.sample.recyclerviews.RetrofitRecyclerViewFragment"
         android:label="RetrofitRecyclerViewFragment" />
 </navigation>

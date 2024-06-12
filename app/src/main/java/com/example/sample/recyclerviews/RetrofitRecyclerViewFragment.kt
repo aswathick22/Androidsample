@@ -1,4 +1,4 @@
-package com.example.sample.retrofit
+package com.example.sample.recyclerviews
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sample.R
 import com.example.sample.adapter.RetrofitAdapter
+import com.example.sample.retrofit.MyViewModel
 
 class RetrofitRecyclerViewFragment : Fragment() {
 
