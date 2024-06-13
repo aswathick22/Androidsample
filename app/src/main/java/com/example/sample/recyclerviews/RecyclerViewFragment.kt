@@ -16,7 +16,6 @@ class RecyclerViewFragment : Fragment() {
 
     private lateinit var binding : FragmentRecyclerviewBinding
     private lateinit var adapter: CustomAdapter
-    private lateinit var recyclerViewFragment: RecyclerViewFragment
     private lateinit var newsArrayList: ArrayList<ItemData>
     private lateinit var imageId : Array<Int>
     private lateinit var heading : Array<String>
@@ -26,20 +25,11 @@ class RecyclerViewFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
+        super.onCreateView(inflater, container, savedInstanceState)
         binding = FragmentRecyclerviewBinding.inflate(inflater, container, false)
-        return super.onCreateView(inflater, container, savedInstanceState)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
         dataInitialize()
-        val layoutManager = LinearLayoutManager(context)
-        binding.recyclerView.layoutManager = layoutManager
-        binding.recyclerView.setHasFixedSize(true)
-        adapter = CustomAdapter(newsArrayList)
-        recyclerViewFragment.adapter = adapter
-
+        return binding.root
     }
 
         private fun dataInitialize(){
@@ -84,5 +74,14 @@ class RecyclerViewFragment : Fragment() {
             val news = ItemData(imageId[i], heading[i])
             newsArrayList.add(news)
         }
+           displayList() 
+    }
+    
+   private fun displayList(){
+        val layoutManager = LinearLayoutManager(context)
+        binding.recyclerView.layoutManager = layoutManager
+        binding.recyclerView.setHasFixedSize(true)
+        adapter = CustomAdapter(newsArrayList)
+        binding.recyclerView.adapter = adapter
     }
 }

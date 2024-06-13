@@ -19,12 +19,11 @@ object RetrofitClient {
         .add(KotlinJsonAdapterFactory())
         .build()
 
-    val wizardWorldAPIService : WizardWorldAPIService by lazy{
+    val wizardWorldAPIService : WizardWorldAPIService =
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .client(okHttpClient)
             .build()
-            .create(wizardWorldAPIService::class.java)
-    }
+            .create(WizardWorldAPIService::class.java)
 }
